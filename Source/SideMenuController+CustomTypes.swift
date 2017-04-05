@@ -31,6 +31,7 @@ public extension SideMenuController {
         case horizontalPan
         case showUnderlay
         
+        #if os(iOS)
         var statusBarAnimation: UIStatusBarAnimation {
             switch self {
             case .fadeAnimation:
@@ -41,6 +42,7 @@ public extension SideMenuController {
                 return .none
             }
         }
+        #endif
     }
     
     public struct Preferences {

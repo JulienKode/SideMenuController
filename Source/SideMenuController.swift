@@ -192,7 +192,9 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
     
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        #if os(iOS)
         NotificationCenter.default.addObserver(self, selector: #selector(SideMenuController.repositionViews), name: .UIApplicationWillChangeStatusBarFrame, object: UIApplication.shared)
+        #endif
     }
     
     override open func viewWillDisappear(_ animated: Bool) {
@@ -364,6 +366,7 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
     
     open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
         
+        #if os(iOS)
         switch gestureRecognizer {
         case is UIScreenEdgePanGestureRecognizer:
             if _preferences.interaction.panningEnabled {
@@ -381,6 +384,7 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
             } else {
                 return false
             }
+
         case is UITapGestureRecognizer:
             return sidePanelVisible
         case is UISwipeGestureRecognizer:
@@ -388,6 +392,17 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
         default:
             return true
         }
+        
+        #else
+            switch gestureRecognizer {
+            case is UITapGestureRecognizer:
+                return sidePanelVisible
+            case is UISwipeGestureRecognizer:
+                return _preferences.interaction.swipingEnabled
+            default:
+                return true
+            }
+        #endif
     }
     
     // MARK: - Computed variables -
@@ -420,7 +435,11 @@ open class SideMenuController: UIViewController, UIGestureRecognizerDelegate {
     
     fileprivate var previousStatusBarHeight: CGFloat = DefaultStatusBarHeight
     fileprivate var statusBarHeight: CGFloat {
-        return UIApplication.shared.statusBarFrame.size.height > 0 ? UIApplication.shared.statusBarFrame.size.height : DefaultStatusBarHeight
+        #if os(iOS)
+            return UIApplication.shared.statusBarFrame.size.height > 0 ? UIApplication.shared.statusBarFrame.size.height : DefaultStatusBarHeight
+        #else
+            return 0.0
+        #endif
     }
     
     fileprivate var hidesStatusBar: Bool {

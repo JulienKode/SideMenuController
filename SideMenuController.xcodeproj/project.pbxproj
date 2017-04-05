@@ -18,6 +18,17 @@
 		13F653271D3E007300700656 /* SideMenuController+CustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F653241D3E007300700656 /* SideMenuController+CustomTypes.swift */; };
 		13F653281D3E007300700656 /* SideMenuController+SideOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F653251D3E007300700656 /* SideMenuController+SideOver.swift */; };
 		13F653291D3E007300700656 /* SideMenuController+SideUnder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F653261D3E007300700656 /* SideMenuController+SideUnder.swift */; };
+		64714A9B1E94D3C1009D1006 /* SideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64714A921E94D3C1009D1006 /* SideMenuController.framework */; };
+		64714AA01E94D3C1009D1006 /* SideMenuControllertvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64714A9F1E94D3C1009D1006 /* SideMenuControllertvOSTests.swift */; };
+		64714AA21E94D3C1009D1006 /* SideMenuControllertvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 64714A941E94D3C1009D1006 /* SideMenuControllertvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64714AA91E94D405009D1006 /* SideMenuController+CustomTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F653241D3E007300700656 /* SideMenuController+CustomTypes.swift */; };
+		64714AAA1E94D405009D1006 /* SideMenuController+SideOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F653251D3E007300700656 /* SideMenuController+SideOver.swift */; };
+		64714AAB1E94D405009D1006 /* SideMenuController+SideUnder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F653261D3E007300700656 /* SideMenuController+SideUnder.swift */; };
+		64714AAC1E94D405009D1006 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A758021D12A2F5004488DA /* SideMenuController.swift */; };
+		64714AAD1E94D405009D1006 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E94DF1D159C4B001C1F7D /* TransitionAnimator.swift */; };
+		64714AAE1E94D405009D1006 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E94E01D159C4B001C1F7D /* UIKitExtensions.swift */; };
+		64714AAF1E94D405009D1006 /* CenterContainmentSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134E94E31D159C56001C1F7D /* CenterContainmentSegue.swift */; };
+		64714AB01E94D405009D1006 /* SideContainmentSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A7586C1D12A61B004488DA /* SideContainmentSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +39,13 @@
 			remoteGlobalIDString = 13A757E51D12A2A0004488DA;
 			remoteInfo = SideMenuController;
 		};
+		64714A9C1E94D3C1009D1006 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13A757DD1D12A2A0004488DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64714A911E94D3C1009D1006;
+			remoteInfo = SideMenuControllertvOS;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +53,7 @@
 		134E94E01D159C4B001C1F7D /* UIKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIKitExtensions.swift; path = Source/UIKitExtensions.swift; sourceTree = SOURCE_ROOT; };
 		134E94E31D159C56001C1F7D /* CenterContainmentSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CenterContainmentSegue.swift; path = Source/CenterContainmentSegue.swift; sourceTree = SOURCE_ROOT; };
 		13A757E61D12A2A0004488DA /* SideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		13A757F01D12A2A0004488DA /* SideMenuControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideMenuControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13A757F01D12A2A0004488DA /* SideMenuController iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SideMenuController iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13A758001D12A2F5004488DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
 		13A758011D12A2F5004488DA /* SideMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SideMenuController.h; path = Source/SideMenuController.h; sourceTree = SOURCE_ROOT; };
 		13A758021D12A2F5004488DA /* SideMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SideMenuController.swift; path = Source/SideMenuController.swift; sourceTree = SOURCE_ROOT; };
@@ -45,6 +63,12 @@
 		13F653241D3E007300700656 /* SideMenuController+CustomTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SideMenuController+CustomTypes.swift"; path = "Source/SideMenuController+CustomTypes.swift"; sourceTree = SOURCE_ROOT; };
 		13F653251D3E007300700656 /* SideMenuController+SideOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SideMenuController+SideOver.swift"; path = "Source/SideMenuController+SideOver.swift"; sourceTree = SOURCE_ROOT; };
 		13F653261D3E007300700656 /* SideMenuController+SideUnder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SideMenuController+SideUnder.swift"; path = "Source/SideMenuController+SideUnder.swift"; sourceTree = SOURCE_ROOT; };
+		64714A921E94D3C1009D1006 /* SideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64714A941E94D3C1009D1006 /* SideMenuControllertvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideMenuControllertvOS.h; sourceTree = "<group>"; };
+		64714A951E94D3C1009D1006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64714A9A1E94D3C1009D1006 /* SideMenuController tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SideMenuController tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64714A9F1E94D3C1009D1006 /* SideMenuControllertvOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuControllertvOSTests.swift; sourceTree = "<group>"; };
+		64714AA11E94D3C1009D1006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +87,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64714A8E1E94D3C1009D1006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64714A971E94D3C1009D1006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64714A9B1E94D3C1009D1006 /* SideMenuController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +110,8 @@
 			children = (
 				13A757E81D12A2A0004488DA /* SideMenuController */,
 				13A757F41D12A2A0004488DA /* SideMenuControllerTests */,
+				64714A931E94D3C1009D1006 /* SideMenuControllertvOS */,
+				64714A9E1E94D3C1009D1006 /* SideMenuControllertvOSTests */,
 				13A757E71D12A2A0004488DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,7 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				13A757E61D12A2A0004488DA /* SideMenuController.framework */,
-				13A757F01D12A2A0004488DA /* SideMenuControllerTests.xctest */,
+				13A757F01D12A2A0004488DA /* SideMenuController iOSTests.xctest */,
+				64714A921E94D3C1009D1006 /* SideMenuController.framework */,
+				64714A9A1E94D3C1009D1006 /* SideMenuController tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +177,24 @@
 			name = SideMenuController;
 			sourceTree = "<group>";
 		};
+		64714A931E94D3C1009D1006 /* SideMenuControllertvOS */ = {
+			isa = PBXGroup;
+			children = (
+				64714A941E94D3C1009D1006 /* SideMenuControllertvOS.h */,
+				64714A951E94D3C1009D1006 /* Info.plist */,
+			);
+			path = SideMenuControllertvOS;
+			sourceTree = "<group>";
+		};
+		64714A9E1E94D3C1009D1006 /* SideMenuControllertvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				64714A9F1E94D3C1009D1006 /* SideMenuControllertvOSTests.swift */,
+				64714AA11E94D3C1009D1006 /* Info.plist */,
+			);
+			path = SideMenuControllertvOSTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -145,12 +206,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64714A8F1E94D3C1009D1006 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64714AA21E94D3C1009D1006 /* SideMenuControllertvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		13A757E51D12A2A0004488DA /* SideMenuController */ = {
+		13A757E51D12A2A0004488DA /* SideMenuController iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13A757FA1D12A2A0004488DA /* Build configuration list for PBXNativeTarget "SideMenuController" */;
+			buildConfigurationList = 13A757FA1D12A2A0004488DA /* Build configuration list for PBXNativeTarget "SideMenuController iOS" */;
 			buildPhases = (
 				13A757E11D12A2A0004488DA /* Sources */,
 				13A757E21D12A2A0004488DA /* Frameworks */,
@@ -161,14 +230,14 @@
 			);
 			dependencies = (
 			);
-			name = SideMenuController;
+			name = "SideMenuController iOS";
 			productName = SideMenuController;
 			productReference = 13A757E61D12A2A0004488DA /* SideMenuController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		13A757EF1D12A2A0004488DA /* SideMenuControllerTests */ = {
+		13A757EF1D12A2A0004488DA /* SideMenuController iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13A757FD1D12A2A0004488DA /* Build configuration list for PBXNativeTarget "SideMenuControllerTests" */;
+			buildConfigurationList = 13A757FD1D12A2A0004488DA /* Build configuration list for PBXNativeTarget "SideMenuController iOSTests" */;
 			buildPhases = (
 				13A757EC1D12A2A0004488DA /* Sources */,
 				13A757ED1D12A2A0004488DA /* Frameworks */,
@@ -179,9 +248,45 @@
 			dependencies = (
 				13A757F31D12A2A0004488DA /* PBXTargetDependency */,
 			);
-			name = SideMenuControllerTests;
+			name = "SideMenuController iOSTests";
 			productName = SideMenuControllerTests;
-			productReference = 13A757F01D12A2A0004488DA /* SideMenuControllerTests.xctest */;
+			productReference = 13A757F01D12A2A0004488DA /* SideMenuController iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64714A911E94D3C1009D1006 /* SideMenuController tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64714AA71E94D3C1009D1006 /* Build configuration list for PBXNativeTarget "SideMenuController tvOS" */;
+			buildPhases = (
+				64714A8D1E94D3C1009D1006 /* Sources */,
+				64714A8E1E94D3C1009D1006 /* Frameworks */,
+				64714A8F1E94D3C1009D1006 /* Headers */,
+				64714A901E94D3C1009D1006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SideMenuController tvOS";
+			productName = SideMenuControllertvOS;
+			productReference = 64714A921E94D3C1009D1006 /* SideMenuController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		64714A991E94D3C1009D1006 /* SideMenuController tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64714AA81E94D3C1009D1006 /* Build configuration list for PBXNativeTarget "SideMenuController tvOSTests" */;
+			buildPhases = (
+				64714A961E94D3C1009D1006 /* Sources */,
+				64714A971E94D3C1009D1006 /* Frameworks */,
+				64714A981E94D3C1009D1006 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64714A9D1E94D3C1009D1006 /* PBXTargetDependency */,
+			);
+			name = "SideMenuController tvOSTests";
+			productName = SideMenuControllertvOSTests;
+			productReference = 64714A9A1E94D3C1009D1006 /* SideMenuController tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -190,7 +295,7 @@
 		13A757DD1D12A2A0004488DA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = teodorpatras;
 				TargetAttributes = {
@@ -201,6 +306,14 @@
 					13A757EF1D12A2A0004488DA = {
 						CreatedOnToolsVersion = 7.3.1;
 						LastSwiftMigration = 0800;
+					};
+					64714A911E94D3C1009D1006 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+					64714A991E94D3C1009D1006 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -216,8 +329,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13A757E51D12A2A0004488DA /* SideMenuController */,
-				13A757EF1D12A2A0004488DA /* SideMenuControllerTests */,
+				13A757E51D12A2A0004488DA /* SideMenuController iOS */,
+				13A757EF1D12A2A0004488DA /* SideMenuController iOSTests */,
+				64714A911E94D3C1009D1006 /* SideMenuController tvOS */,
+				64714A991E94D3C1009D1006 /* SideMenuController tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +346,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		13A757EE1D12A2A0004488DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64714A901E94D3C1009D1006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64714A981E94D3C1009D1006 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -263,13 +392,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		64714A8D1E94D3C1009D1006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64714AA91E94D405009D1006 /* SideMenuController+CustomTypes.swift in Sources */,
+				64714AAA1E94D405009D1006 /* SideMenuController+SideOver.swift in Sources */,
+				64714AAB1E94D405009D1006 /* SideMenuController+SideUnder.swift in Sources */,
+				64714AAC1E94D405009D1006 /* SideMenuController.swift in Sources */,
+				64714AAD1E94D405009D1006 /* TransitionAnimator.swift in Sources */,
+				64714AAE1E94D405009D1006 /* UIKitExtensions.swift in Sources */,
+				64714AAF1E94D405009D1006 /* CenterContainmentSegue.swift in Sources */,
+				64714AB01E94D405009D1006 /* SideContainmentSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64714A961E94D3C1009D1006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64714AA01E94D3C1009D1006 /* SideMenuControllertvOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		13A757F31D12A2A0004488DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13A757E51D12A2A0004488DA /* SideMenuController */;
+			target = 13A757E51D12A2A0004488DA /* SideMenuController iOS */;
 			targetProxy = 13A757F21D12A2A0004488DA /* PBXContainerItemProxy */;
+		};
+		64714A9D1E94D3C1009D1006 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64714A911E94D3C1009D1006 /* SideMenuController tvOS */;
+			targetProxy = 64714A9C1E94D3C1009D1006 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,8 +540,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teodorpatras.SideMenuController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julienkarst.SideMenuController;
+				PRODUCT_NAME = SideMenuController;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -404,8 +561,8 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.teodorpatras.SideMenuController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julienkarst.SideMenuController;
+				PRODUCT_NAME = SideMenuController;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -433,6 +590,86 @@
 			};
 			name = Release;
 		};
+		64714AA31E94D3C1009D1006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SideMenuControllertvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julienkarst.SideMenuController;
+				PRODUCT_NAME = SideMenuController;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		64714AA41E94D3C1009D1006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SideMenuControllertvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julienkarst.SideMenuController;
+				PRODUCT_NAME = SideMenuController;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		64714AA51E94D3C1009D1006 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = SideMenuControllertvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julienkarst.SideMenuControllertvOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		64714AA61E94D3C1009D1006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				INFOPLIST_FILE = SideMenuControllertvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.julienkarst.SideMenuControllertvOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -445,7 +682,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13A757FA1D12A2A0004488DA /* Build configuration list for PBXNativeTarget "SideMenuController" */ = {
+		13A757FA1D12A2A0004488DA /* Build configuration list for PBXNativeTarget "SideMenuController iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13A757FB1D12A2A0004488DA /* Debug */,
@@ -454,7 +691,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13A757FD1D12A2A0004488DA /* Build configuration list for PBXNativeTarget "SideMenuControllerTests" */ = {
+		13A757FD1D12A2A0004488DA /* Build configuration list for PBXNativeTarget "SideMenuController iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13A757FE1D12A2A0004488DA /* Debug */,
@@ -462,6 +699,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		64714AA71E94D3C1009D1006 /* Build configuration list for PBXNativeTarget "SideMenuController tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64714AA31E94D3C1009D1006 /* Debug */,
+				64714AA41E94D3C1009D1006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		64714AA81E94D3C1009D1006 /* Build configuration list for PBXNativeTarget "SideMenuController tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64714AA51E94D3C1009D1006 /* Debug */,
+				64714AA61E94D3C1009D1006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
